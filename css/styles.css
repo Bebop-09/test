@@ -113,6 +113,12 @@ a {
   color: #ee6553;
 }
 
+@media screen and (max-width: 600px) {
+  :root {
+    --content-width: 100%; /* Use full width on smaller screens */
+  }
+}
+
 *,
 :after,
 :before {
@@ -686,7 +692,7 @@ area[href].menu__link_button {
   margin-bottom: 1.456rem;
   margin-bottom: var(--vertical-spacing-1x);
   max-width: 20ch;
-  max-width: var(--header-size-1);
+  max-width: 100%;
   padding-top: 1.736rem;
   text-transform: uppercase;
 }
@@ -742,7 +748,7 @@ area[href].menu__link_button {
     background-position-x: left;
     background-size: contain;
     margin-bottom: 0.28rem;
-    min-height: 1100px;
+    min-height: 600px;
     padding-top: 0rem;
   }
 }
